@@ -13,8 +13,8 @@ To understand the BART transformer, one needs to closely look at BERT and GPT. B
 ## BART Pre-training
 There are five primary methods for training BART with noisy text:
 - **Token Masking**: Randomly, a small number of input points are masked.
-- Token Deletion: Certain tokens from the document are deleted.
-- Text Infilling: Multiple tokens are replaced with a single mask token.
-- Sentence Permutation: Sentences are identified with the help of ‘.’ and are then shuffled for training.
-- Document Rotation: A token is randomly selected, and the sequence is rotated so that the document begins with the chosen token.
+- **Token Deletion**: Certain tokens from the document are deleted.
+- **Text Infilling**: Multiple tokens are replaced with a single mask token.
+- **Sentence Permutation**: Sentences are identified with the help of ‘.’ and are then shuffled for training.
+- **Document Rotation**: A token is randomly selected, and the sequence is rotated so that the document begins with the chosen token.
 These strategies augment the dataset and make the BART model better understand the natural language.
