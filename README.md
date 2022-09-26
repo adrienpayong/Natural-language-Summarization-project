@@ -51,6 +51,7 @@ The BART model will perform abstractive text summarization in Python on a given 
 - Define the trainer class and then fit the model.
 
 ## For running the web application:
+![image](https://github.com/adrienpayong/images/blob/main/app_demo.png)
 
 
 
