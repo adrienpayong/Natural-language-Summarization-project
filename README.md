@@ -51,6 +51,16 @@ The BART model will perform abstractive text summarization in Python on a given 
 - Define the trainer class and then fit the model.
 
 ## For running the web application:
+Upload the run_app.ipynb file on your drive, open it with colab and follow the steps mentioned:
+- Install dependencies
+- Setup ngrok
+- Signup with ngrok and copy auth code and paste to create config file
+- zip output folder and upload it the notebook 
+- Unzip it (command mentioned it will create a directory)
+- Move to the output directory
+- And then run app.py with the command !python app.py.
+
+
 ![image](https://github.com/adrienpayong/images/blob/main/app_demo.png)
 
 
