@@ -23,5 +23,35 @@ Depending on the task one wants to perform using BART, they can fine-tune the mo
 - **Sequence classification**: To perform sequence classification using BART, we feed the same input to the encoder and the decoder. The final decoder token's final hidden state is fed into a new multi-class linear classifier.
 - **Token classification**: For solving classification problems using BART,  the complete document is passed into the encoder and decoder, and the top hidden state of the decoder is used as a representation for each word. One then uses this representation for the classification of tokens.
 - **Sequence generation**: As an autoregressive decoder is a part of the BART model’s architecture, we can use it for sequence generation problems. The input at the encoder acts as the input, and the decoder generates the output autoregressively.
-- **Machine translation**: Unlike other state-of-the-art models, BART combines both an encoder and a decoder, making it suitable for English translation. To add a new set of encoder parameters (learn using bitext) to the model and use BART as a single pre-trained decoder for machine translation.
+- **Machine translation**: Unlike other state-of-the-art models, BART combines both an encoder and a decoder, making it suitable for English translation. To add a new set of encoder parameters (learn using bitext) to the model and use BART as a single pre-trained decoder for machine translation.Dataset for Text ## Summarization using BART
+
+The data used is from the curation base repository, which has a collection of 40,000 professionally written summaries of news articles, with links to the articles themselves.
+The data was downloaded in the form of a CSV file and has the following features:
+- Article titles – title for the texts
+- Summaries – Summary for each text
+- URLs – the URL links
+- Dates
+- Article content – content under each article 
+## Aim of the Bart Text Summarization Project
+The BART model will perform abstractive text summarization in Python on a given text data
+## Tech Stack
+- Language - Python
+- Libraries - pandas, sklearn, PyTorch, transformers, PyTorch Lightning 
+- Environment – Google Colab
+## BART Summarization Project: Solution Approach
+- Import the dataset from the dataset library and load a subset of the data. (To get an overview of the summarized data)
+- Create a class function for the dataset.
+- Create a class function for the BART data loader.
+- Create an abstractive summarization model class function.
+- Create a BART tokenizer 
+- Define the data loader 
+- Read and prepare the data.
+- Perform train test split. 
+- Create the main class that runs the ‘BARTForConditionalGeneration’ model and tokenizer as an input.
+- Define the trainer class and then fit the model.
+
+## For running the web application:
+
+
+
 
