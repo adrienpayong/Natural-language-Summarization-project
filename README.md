@@ -18,3 +18,10 @@ There are five primary methods for training BART with noisy text:
 - **Sentence Permutation**: Sentences are identified with the help of ‘.’ and are then shuffled for training.
 - **Document Rotation**: A token is randomly selected, and the sequence is rotated so that the document begins with the chosen token.
 These strategies augment the dataset and make the BART model better understand the natural language.
+## BART Fine-Tuning  Down Stream Tasks 
+Depending on the task one wants to perform using BART, they can fine-tune the model as discussed in the section below:
+- **Sequence classification**: To perform sequence classification using BART, we feed the same input to the encoder and the decoder. The final decoder token's final hidden state is fed into a new multi-class linear classifier.
+- **Token classification**: For solving classification problems using BART,  the complete document is passed into the encoder and decoder, and the top hidden state of the decoder is used as a representation for each word. One then uses this representation for the classification of tokens.
+- **Sequence generation**: As an autoregressive decoder is a part of the BART model’s architecture, we can use it for sequence generation problems. The input at the encoder acts as the input, and the decoder generates the output autoregressively.
+- **Machine translation**: Unlike other state-of-the-art models, BART combines both an encoder and a decoder, making it suitable for English translation. To add a new set of encoder parameters (learn using bitext) to the model and use BART as a single pre-trained decoder for machine translation.
+
