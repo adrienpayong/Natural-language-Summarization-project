@@ -1,4 +1,4 @@
-# Introduction to Text Summarization using Transformers
+# Text Summarization using Transformers
 In data science, summarization has been and will likely remain a subject of intense interest.
 Summarization is a method for shortening a text without losing its essential content.
 It's a hot topic in Natural Language Processing (NLP). There are two types of summarization methods, depending on whether or not the original text's sentence structure is preserved. New sentences are generated using NLP techniques, extractive, and abstractive summarization. 
