@@ -22,7 +22,8 @@ Depending on the task one wants to perform using BART, they can fine-tune the mo
 - **Sequence classification**: To perform sequence classification using BART, we feed the same input to the encoder and the decoder. The final decoder token's final hidden state is fed into a new multi-class linear classifier.
 - **Token classification**: For solving classification problems using BART,  the complete document is passed into the encoder and decoder, and the top hidden state of the decoder is used as a representation for each word. One then uses this representation for the classification of tokens.
 - **Sequence generation**: As an autoregressive decoder is a part of the BART model’s architecture, we can use it for sequence generation problems. The input at the encoder acts as the input, and the decoder generates the output autoregressively.
-- **Machine translation**: Unlike other state-of-the-art models, BART combines both an encoder and a decoder, making it suitable for English translation. To add a new set of encoder parameters (learn using bitext) to the model and use BART as a single pre-trained decoder for machine translation.Dataset for Text ## Summarization using BART
+- **Machine translation**: Unlike other state-of-the-art models, BART combines both an encoder and a decoder, making it suitable for English translation. To add a new set of encoder parameters (learn using bitext) to the model and use BART as a single pre-trained decoder for machine translation.Dataset for Text
+ ## Dataset for Text Summarization using BART
 
 The data used is from the curation base repository, which has a collection of 40,000 professionally written summaries of news articles, with links to the articles themselves.
 The data was downloaded in the form of a CSV file and has the following features:
